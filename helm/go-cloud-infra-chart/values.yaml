@@ -4,7 +4,7 @@ image:
   repository: urvishkumar0409/go-cloud-infra
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "10188591688"
+  tag: "10189106603"
 
 ingress:
   enabled: false
