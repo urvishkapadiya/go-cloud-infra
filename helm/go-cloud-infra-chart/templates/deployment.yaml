@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-cloud-infra
+  labels:
+    app: go-cloud-infra
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-cloud-infra
+  template:
+    metadata:
+      labels:
+        app: go-cloud-infra
+    spec:
+      containers:
+      - name: go-cloud-infra
+        image: urvishkumar0409/go-cloud-infra:{{ .Values.image.tag }}
+        ports:
+        - containerPort: 8080
