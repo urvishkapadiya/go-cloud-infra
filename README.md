@@ -13,3 +13,6 @@ go run main.go
 The server will start on port 8080. You can access it by navigating to `http://localhost:8080/home` in your web browser.
 
 
+## Complete DevOps CI/CD Pipeline
+
+![Website](static/images/diagram.png)
